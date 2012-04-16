@@ -3,20 +3,33 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
-	<!-- iPad/iPhone specific css below, add after your main css >
-	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
-	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
-	-->
 	<script type="text/javascript" charset="utf-8" src="phonegap-1.3.0.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
   </head>
  <body onload="onBodyLoad()">
-	<h1>PhoneGap Video</h1>
-    <video width="320" height="240" controls="controls">
-        <source src="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1" type="video/mp4" />
-        <source src="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1" type="video/ogg" />
+    <h1>PhoneGap</h1>
+    <h2>Video #1</h2>
+    <video width="320" height="240" controls="controls" id="video" preload="auto">
+        <source src="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1&stageSize=320,240" type="video/mp4" />
+        <source src="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1&stageSize=320,240" type="video/ogg" />
+        <source src="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1&stageSize=320,240" type="video/webm" />
+        Your browser does not support the video tag.
+     </video>
+     <div><a href="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1&stageSize=320,240">Video #1 link</a></div>
+     <h2>Video #2</h2>
+     <video width="320" height="240" controls="controls" id="video2">
+        <source src="sample.m4v"/>
+        <source src="sample.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
   </body>
+
+    <script>
+        var video = document.getElementById('video');
+        video.addEventListener('click',function()
+        {
+            video.play();
+        },false);
+    </script>
+    
 </html>
