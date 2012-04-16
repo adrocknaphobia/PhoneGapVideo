@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.ryanstewart.traveljournal"
+	id		= "com.adrocknaphobia.phonegapvideo"
 	version 	= "1.0.0">
 
-	<name>Travel Journal</name>
+	<name>PhoneGap Video</name>
 
 	<description>
-		A demo travel journal application to show off PhoneGap!
+		Let's see if we can pull Scene7 video into a PhoneGap application!
 	</description>
 
-	<author href="http://www.github.com/ryanstewart"
-		email="ryan@adobe.com">
-		Ryan F.N. Stewart
+	<author href="http://www.github.com/adrocknaphobia"
+		email="adrock@adobe.com">
+		Adam Lehman
 	</author>
 
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
-    <feature name="http://api.phonegap.com/1.0/camera" />
-    <feature name="http://api.phonegap.com/1.0/file" />
 
 	<preference name="orientation" value="portrait" />
     <preference name="phonegap-version" value="1.3.0" />
