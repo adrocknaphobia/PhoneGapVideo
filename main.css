@@ -4,7 +4,6 @@ body
     font-family: "Roboto", "Droid Sans Mono", "Helvetica", "Arial";
     color: #ffffff;
     text-shadow: 2px 2px 1px #000000;
-        
     background-color: #6d695c;
     background-image:
       repeating-linear-gradient(-30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
@@ -12,4 +11,10 @@ body
       linear-gradient(30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
       linear-gradient(-30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
     background-size: 70px 120px;
+}
+
+a
+{
+    text-shadow: none;
+    color: #d9d9d9;
 }
