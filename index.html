@@ -8,29 +8,14 @@
   </head>
  <body onload="onBodyLoad()">
     <h1>PhoneGap</h1>
-    <h2>Video #1</h2>
-    <video width="320" height="240" controls="controls" id="video" preload="auto">
-        <source src="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1&stageSize=320,240" type="video/mp4" />
-        <source src="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1&stageSize=320,240" type="video/ogg" />
-        <source src="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1&stageSize=320,240" type="video/webm" />
-        Your browser does not support the video tag.
-     </video>
-     <div><a href="http://sample.scene7.com/s7/uvideo.jsp?asset=PortalCo/Trex_AVS&config=PortalCo/Universal_Video1&stageSize=320,240">Video #1 link</a></div>
-     <h2>Video #2</h2>
-     <video width="320" height="240" controls="controls" id="video2">
-        <source src="sample.m4v"/>
-        <source src="http://s7mbrstream.scene7.com/hls-vod/PortalCo/Cynthia/MIscBitrates/Trex_400Kbps_400x224_Main31.mp4.m3u8" type="video/mp4" />
+     <video width="240" height="320" controls="controls" id="video2">
+        <source src="http://sample.scene7.com/e2/PortalCo/videos/womens_skirt_preen_hg6891b-VerticalMP4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
   </body>
 
     <script>
         var video = document.getElementById('video');
-        video.addEventListener('click',function()
-        {
-            video.play();
-        },false);
-        video = document.getElementById('video2');
         video.addEventListener('click',function()
         {
             video.play();
